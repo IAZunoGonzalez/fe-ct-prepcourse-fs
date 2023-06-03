@@ -3,30 +3,30 @@
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:
-   return array[0]
+   return array[0];
 }
 
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
-   return array[array.length -1]
+   return array[array.length -1];
 }
 
 function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
    // Tu código:
-   return array.length
+   return array.length;
 }
 
-
-//AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
-   var masUno = array.map(num => {
-      return num + 1;
-   });
+   var nuevoArray = [] 
+   for (var i = 0; i < array.length; i++) {
+      nuevoArray.push(array[i] + 1)
+   }
+   return nuevoArray;
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
